@@ -1,18 +1,17 @@
 """ Importing Tkinter """
 import tkinter as tk
 from tkinter import Button, Label
-
-from selenium.webdriver import common
 from wiki_app import *
 
 # Main root window
 root = tk.Tk()
+root.title("Randow Wikipedia Article")
 
 # Label 
 button_label = Label(root, text="Press the button to generate a Wikipedia page")
 
 # Button
-gen_button = Button(root, text="Generate", command=gen_rand)
+gen_button = Button(root, text="Generate", command=gen_rand, bg="#F9E178")
 
 # Grid
 button_label.grid(row=0, column=0, padx=5, pady=5)
