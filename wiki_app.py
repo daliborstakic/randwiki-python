@@ -12,4 +12,5 @@ html_page = driver.find_element_by_xpath('html')
 
 def gen_rand():
     """ Generates a random Wiki page """
+    html_page = driver.find_element_by_xpath('html')
     html_page.send_keys(Keys.ALT, Keys.SHIFT, 'x')
